@@ -1,0 +1,29 @@
+version: "3"
+services:
+#  phpserver:
+#    image: php
+#    ports:
+#      - "80:80"
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - "3000:80"
+    links: #conectarme con MySql
+      - "mysql"
+    environment:
+      PMA_HOST: mysql
+  mysql:
+    image: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    volumes:
+      - "../mysql:/var/lib/mysql"
+  apache:
+    image: php:apache
+    ports:
+      - "4000:80"
+    volumes:
+      - "./src:/var/www/html"    #Montar volumen de htdoc para crear persistencia
+      - "./php.ini:/usr/local/etc/php/conf.d/docker-php-ext-sodium.ini"

@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.calendario-container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendario-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendario-header a {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.calendario-header a:hover {
+    background-color: #45a049;
+}
+
+.calendario {
+    /* Aquí se agregarán estilos específicos para el calendario */
+}
+.calendario-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendario {
+    text-align: center;
+}
+
+.mes {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.dias-semana, .dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.dias-semana div, .dias .dia {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.dias-semana div {
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+.dia {
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dia:hover {
+    background-color: #e0e0e0;
+}
+
+/*css de la semana*/
+.semana-container {
+    width: 100%;
+    margin: auto;
+}
+
+.encabezado-semana, .cuerpo-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.dia-semana, .hora-dia, .evento-semana {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.hora-dia {
+    font-weight: bold;
+}
+
