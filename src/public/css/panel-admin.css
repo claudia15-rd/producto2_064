@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.panel-admin {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.panel-admin h2, .panel-admin h3 {
+    text-align: center;
+}
+
+/* .panel-admin form {
+    margin-top: 20px;
+} */
+
+.panel-admin input,
+/*.panel-admin input[type="datetime-local"],*/
+.panel-admin select,
+.panel-admin textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+
+form button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    cursor: pointer;
+    color: inherit;
+    font-size: 16px; /* Ajusta el tamaño de fuente según sea necesario */
+}
+
+.form-submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-submit-button-delete {
+    width: 100%;
+    padding: 10px;
+    background-color: #af4c4c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Estilos para Gestión de Ponentes y Inscritos */
+.gestion-ponentes, .gestion-inscritos {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gestion-ponentes h3, .gestion-inscritos h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilos para los Formularios de Gestión */
+.gestion-ponentes form, .gestion-inscritos form {
+    margin-top: 15px;
+}
+
+.gestion-ponentes input[type="text"],
+.gestion-inscritos input[type="text"],
+.gestion-ponentes select,
+.gestion-inscritos select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Botones para Formularios de Gestión */
+.gestion-ponentes button,
+.gestion-inscritos button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.gestion-ponentes button:hover,
+.gestion-inscritos button:hover {
+    background-color: #45a049;
+}
+
+.mes {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.calendario {
+    text-align: center;
+}
+
+.contenedor-eventos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.evento {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #e3cc6d;
+}
+.evento-suscrito {
+    background-color: #6de372;
+}
+.evento-titulo {
+    font-size: large;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.evento-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: start;
+}
