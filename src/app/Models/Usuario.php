@@ -27,8 +27,21 @@ class Usuario extends Model
         return $this->belongsTo(TipoUsuario::class, 'Id_tipo_usuario');
     }
 
-    public static function altaUsuario($username, $password, $persona, $tipoUsuario){
+    public static function altaUsuario($username, $password, $persona, $tipoUsuario)
+    {
         DB::insert('INSERT INTO Usuarios (Username, `Password`, Id_Persona, Id_tipo_usuario) 
         VALUES (?, ?, ?, ?)', [$username, $password, $persona, $tipoUsuario]);
     }
+
+    //Ini apalac
+    public static function GetUsuariosPonentes()
+    {
+        return DB::select('SELECT * FROM `usuarios` WHERE `Id_tipo_usuario` = 3');
+    }
+
+    public static function GetPersonaPonente($username)
+    {
+        return DB::select("SELECT * FROM `usuarios` WHERE `Username` = ?", [$username]);
+    }
 }
+    //End apalac

@@ -56,7 +56,13 @@ Route::group(['middleware' => 'AuthGuard'], function () {
 
     Route::get('/panelusuario/perfil', [PanelUsuarioPerfilController::class, 'getPerfil']);
     Route::post('/panelusuario/perfil', [PanelUsuarioPerfilController::class, 'postPerfil']);
-
+//Ini apalac ponentes
+    Route::post('paneladmin/ponente/crear', [PanelAdminController::class, 'postAgregarPonente']);
+    Route::get('paneladmin/ponente/crear', [PanelAdminController::class, 'postAgregarPonente2']);
+ 
+    Route::post('paneladmin/ponente/borrar', [PanelAdminController::class, 'postBorrarPonente']);
+    Route::get('paneladmin/ponente/borrar', [PanelAdminController::class, 'postBorrarPonente2']);
+//Fin apalac ponentes
 });
 
 

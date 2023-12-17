@@ -68,6 +68,19 @@ form button {
     border-radius: 4px;
     cursor: pointer;
 }
+
+/*Ini apalac*/
+.form-submit-button-ponente {
+    width: 100%;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*Fin apalac*/
+
 /* Estilos para Gestión de Ponentes y Inscritos */
 .gestion-ponentes, .gestion-inscritos {
     margin-top: 30px;
@@ -153,3 +166,8 @@ form button {
     gap: 0.25rem;
     text-align: start;
 }
+/*Ini apalac*/
+.evento-ponente {
+    background-color: orange;
+}
+/*Fin apalac*/

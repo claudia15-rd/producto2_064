@@ -60,6 +60,18 @@
                 @csrf
                 <button class='form-submit-button-delete' type='submit'>Borrar Acto</button>
             </form>
+            <!--Ini Agregar ponente apalac-->
+            <form action='/paneladmin/ponente/crear?id={{$acto['Id_acto']}}'' style='margin-top: 1rem;' method='POST'>
+                @csrf
+                <button class='form-submit-button-ponente' type='submit'>Agregar ponente</button>
+            </form>            
+            <!--Fin Agregar ponente apalac-->      
+            <!--Ini Borrar ponente apalac-->
+            <form action='/paneladmin/ponente/borrar?id={{$acto['Id_acto']}}'' style='margin-top: 1rem;' method='POST'>
+                @csrf
+                <button class='form-submit-button-ponente' type='submit'>Borrar ponente</button>
+            </form>            
+            <!--Fin Borrar ponente apalac-->                    
     </section>
 </div>
 

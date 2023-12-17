@@ -15,7 +15,9 @@ class PanelUsuarioController extends Controller
     public function getByDia() {
         $idPersona = session('personId');
         $actos = Acto::GetEventosDia($idPersona, Carbon::now()->format('Y-m-d'));
-        return view('panel-usuario-dia')->with('eventos', $actos);
+        //apalac + ponentes abajo
+        $actos_ponente = Acto::GetEventosDiaPonente($idPersona, Carbon::now()->format('Y-m-d'));
+        return view('panel-usuario-dia')->with('eventos', $actos)->with('ponentes', $actos_ponente);
     }
 
     public function postDia(Request $request) {

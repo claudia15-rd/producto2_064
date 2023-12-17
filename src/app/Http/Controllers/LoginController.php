@@ -43,14 +43,14 @@ class LoginController extends Controller
               //      Session::flush();
               //      return redirect('/login');
               //      break;
-                   return redirect('/panelusuario/dia');
+                   return redirect('/panelusuario/dia'); 
                    break;              
                 case 3:
-               //     return redirect('/panelusuario/dia');
-               //     break;                   Faltan los ponentes...
-                    Session::flush();
-                    return redirect('/login');
-                    break;               
+                    return redirect('/panelusuario/dia');
+                    break;                 //  MOstrará donde están inscritos y donde son ponentes
+               //     Session::flush();
+               //     return redirect('/login');
+               //     break;               
             }
             return redirect('/panelusuario/dia');
         }
