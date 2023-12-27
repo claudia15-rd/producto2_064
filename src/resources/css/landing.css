@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+}
+
+/* Estilos Generales para la Sección de Servicios */
+#servicios {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#servicios h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Estilos Generales para la Sección de Inicio */
+#inicio {
+    background-color: #e8f4f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#inicio h2 {
+    color: #2a4d69;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#inicio p {
+    color: #4a4a4a;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Botón en la Sección de Inicio */
+a.btn-inicio {
+    display: inline-block;
+    background-color: #5b8c85;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+a.btn-inicio:hover {
+    background-color: #417f7a;
+}
+
+/* Estilos para Cada Servicio */
+.servicio {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.servicio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.servicio h3 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.servicio p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Botones y Enlaces */
+a.btn-inicio {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+a.btn-inicio:hover {
+    background-color: #3e8e41;
+}
+
+/* Estilos Generales para la Sección de Contacto */
+#contacto {
+    background-color: #f2f2f2;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contacto h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contacto p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Estilos para Información de Contacto y Formulario */
+.informacion-contacto {
+    margin-bottom: 20px;
+}
+
+.informacion-contacto p {
+    font-weight: bold;
+}
+
+/* Estilos para el Formulario de Contacto */
+#contacto form {
+    max-width: 500px;
+    margin: auto;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#contacto button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contacto button[type="submit"]:hover {
+    background-color: #45a049;
+}

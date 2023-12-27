@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.calendario-container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendario-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendario-header a {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.calendario-header a:hover {
+    background-color: #45a049;
+}
+
+.calendario {
+    /* Aquí se agregarán estilos específicos para el calendario */
+}
+.calendario-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendario {
+    text-align: center;
+}
+
+.mes {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.dias-semana, .dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.dias-semana div, .dias .dia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    border: 1px solid #ddd;
+}
+
+.dias-semana div {
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+.dia {
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dia:hover {
+    background-color: #e0e0e0;
+}
+
+/*css de la semana*/
+.semana-container {
+    width: 100%;
+    margin: auto;
+}
+
+.encabezado-semana, .cuerpo-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.dia-semana, .hora-dia, .evento-semana {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.diaSel {
+    background-color: #4CAF50;
+}
+
+.contenedor-eventos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.evento {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    background-color:  #e3cc6d;
+}
+.evento-suscrito {
+    background-color: #6de372;
+}
+/*Ini apalac*/
+.evento-ponente {
+    background-color: orange;
+}
+/*Fin apalac*/
+
+.evento-titulo {
+    font-size: large;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.evento-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: start;
+}
+
+.hora-dia {
+    font-weight: bold;
+}
+
+form button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    cursor: pointer;
+    color: inherit;
+    font-size: 16px; /* Ajusta el tamaño de fuente según sea necesario */
+}
+

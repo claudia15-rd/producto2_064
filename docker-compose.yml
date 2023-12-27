@@ -1,0 +1,38 @@
+version: '2'
+
+services:
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - "8001:80"
+    networks:
+      - ponentes
+    environment:
+      PMA_HOST: mysql
+  mysql:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    networks:
+      - ponentes
+    volumes:
+      - "../mysql:/var/lib/mysql"
+  app:
+    image: docker.io/bitnami/laravel:10
+    ports:
+      - '8000:8000'
+    environment:
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_USERNAME=root
+      - DB_PASSWORD=example
+      - DB_DATABASE=PonentesEventos
+    networks:
+      - ponentes
+    volumes:
+      - './src:/app'
+    depends_on:
+      - mysql
+networks:
+  ponentes:
+    driver: bridge
